@@ -1,0 +1,137 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(47, 46, 82);
+}
+
+#clock{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#clock #cards{
+    display: flex;
+   
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#clock #cards div{
+    
+    margin: 0 10px;
+    
+}
+
+#clock #cards div div{
+    
+    
+    height: 200px;
+    width: 200px; 
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25),
+    0 2px 2px rgba(0, 0, 0, 0.25),
+    0 4px 4px rgba(0, 0, 0, 0.25),
+    0 8px 8px rgba(0, 0, 0, 0.25),
+    0 16px 16px rgba(0, 0, 0, 0.25),
+    0 32px 32px rgba(0, 0, 0, 0.25),
+    0 48px 48px rgba(0, 0, 0, 0.25);
+}
+
+#day {
+    background: #FCFF4B;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.day{
+    background: #fdff9b;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+
+
+
+#hour, #minute{
+    background: #0EB1D2;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hour, .minute {
+    background: #7dd3e4;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#meridiano {
+    background: #447604;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.meridiano {
+    background: #a3c773;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+#month{
+    background: #DD403A;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.month {
+    background: #f08380;
+    color: #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#clock #cards div div:nth-child(2){
+    height: 60px;
+    font-size: 2em;
+    
+
+}
+
+@media (max-width: 400px) {
+
+    #clock #cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    #clock #cards>div {
+        margin-bottom: 30px;
+    }
+}
